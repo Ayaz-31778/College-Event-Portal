@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Events</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .events {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .events {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>College Event Portal</h1>
+        <p>Welcome to Our College Events</p>
+    </header>
+
+    <h2 style="text-align: center;">Upcoming Events</h2>
+
+    <div class="events">
+
+        <div class="card">
+            <img src="https://placehold.co/200x150?text=Tech+Fest" alt="Tech Fest">
+            <h3>Tech Fest</h3>
+            <p>Date: 20 November</p>
+            <p>Venue: Auditorium</p>
+            <button onclick="register()">Register</button>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/200x150?text=Cultural" alt="Cultural Fest">
+            <h3>Cultural Fest</h3>
+            <p>Date: 25 November</p>
+            <p>Venue: College Ground</p>
+            <button onclick="register()">Register</button>
+        </div>
+
+        <div class="card">
+            <img src="https://placehold.co/200x150?text=Sports" alt="Sports Meet">
+            <h3>Sports Meet</h3>
+            <p>Date: 30 November</p>
+            <p>Venue: Sports Complex</p>
+            <button onclick="register()">Register</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Contact: events@college.edu</p>
+    </footer>
+
+    <script>
+        function register() {
+            alert("Registration successful!");
+        }
+    </script>
+
+</body>
+</html>
